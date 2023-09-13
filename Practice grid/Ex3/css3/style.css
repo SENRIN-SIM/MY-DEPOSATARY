@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    background-color: black;
+    gap: 1px;
+    height: 100px;
+    grid-template-areas: 
+        "box1 box1 box1"
+        "box2 box3 box3"
+        "box2 box4 box5"
+        "box2 box6 box6"
+    ;
+}
+.contain > div{
+    background-color: teal;
+    text-align: center;
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.box5{
+    grid-area: box5;
+}
+.box6{
+    grid-area: box6;
+}
